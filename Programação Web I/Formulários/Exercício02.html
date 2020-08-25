@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+     <head>
+	      <title>Sistema de Gestão acadêmico</title>
+		  <style>
+		   h1 {
+		   background-color: yellow;
+		   }
+		   </style>    
+		<meta charset="UTF-8">
+     </head>
+	<body>
+	     <form action="">
+		 <fieldset>
+		 <h1>Sistema de Gestão acadêmico</h1>
+		<h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+		Login:<input type="text" name="Login" placeholder="Digite seu Login"/><br>  
+		Senha:<input type="password" name="Senha"/><br>  
+		Status: <select name="Inativo">
+               <option value="">Inativo</option>
+               </select><br>			   
+	   Data Criação:<input type="text" name="Data"/><br>
+		Perfil:<input type="radio" name="Convidado" valor="Convidado"/>
+		       <input type="radio" name="Administrador" valor="Administrador"/><br>
+		Observação:<textarea rows="" cols""></textarea><br>
+		Módulos:
+		<select name="Módulos">
+		       <input type="checkbox" name="Compras" valor="Compras"/>
+		       <input type="checkbox" name="Biblioteca" valor="Biblioteca"/>
+		       <input type="checkbox" name="Acadêmico" valor="Acadêmico"/>
+		       <br><input type="checkbox" name="Documentação" valor="Documentação"/>
+			   <input type="checkbox" name="Recursos Humanos" valor="Recursos Humanos"/>
+		</select>		
+        <input type="submit" value="Cadastrar"/>
+		<input type="submit" value="Excluir">
+		</fieldset>
+		 </form>
+	</body>
+</html>	
