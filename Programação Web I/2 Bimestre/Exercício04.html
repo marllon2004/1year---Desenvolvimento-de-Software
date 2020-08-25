@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+	   <title>Cadastro de Funcionario</title>
+	   <style>
+	   form{
+		      width: 450px;
+			  border: 4px solid  purple;
+			  }
+	   </style>
+	   <meta charset="UTF-8">
+	</head>
+	<body>
+	    <form action="">
+		<h1>Cadastro de Funcionário</h1>
+		<fieldset>
+		 <legend>Detalhes Pessoais</legend>
+		 <br>Nome:<input type="text" name="nome"/>
+		 <br>Sobrenome:<input type="text" name="sobrenome" />
+		 <br>Data de nascimento:<input type="data" name="data"/>
+		</fieldset>
+		<fieldset>
+		 <legend>Detalhes Profissionais</legend>
+		 <br>Departamento:<select><option value="">Não Selecionado</option></select>
+		 <br>Código Funcionário:<input type="number" name="codigo"/>
+		</fieldset>
+		 <input type="submit" value="Incluir Funcionário">
+		</form>
+	</body>
+ </html>
