@@ -1,0 +1,28 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Alterando a cor da div </title>
+            <Meta charset="UTF-8">
+                <script src="../js/jquery-3.4.1.js" type="text/javascript"></script>
+                <script>
+                    $("#get").click(function (){
+                        $("h1").css("fontSize", "200px");
+                    });
+                    $("#set").click(function (){
+                        $("h1").css("fontSize","50px");
+                    });
+                    $("#set2").click(function (){
+                        $("h1").css({
+                            fontSize: "100px",
+                            color:"red"
+                    });
+                        });
+                    </script>
+        </head>
+        <body>
+            <h1>Get a Set com CSS</h1>
+            <button  id="get">get valor</button>
+            <button  id="set">Set valor</button>
+            <button  id="set 2">Set valor</button>
+        </body>
+    </html>

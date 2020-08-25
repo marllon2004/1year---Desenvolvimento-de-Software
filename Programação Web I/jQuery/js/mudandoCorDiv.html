@@ -1,0 +1,36 @@
+<DOCTYPE HTML>
+        <html>
+            <head>
+                <title>Alterando a cor da div </title>
+                <Meta charset="UTF-8">
+                    <script src="../js/jquery-3.4.1.js" type="text/javascript"></script>
+                    <script>
+                        $(document).ready(function (){
+                            $(".b1").click(function(){
+                                var caminho = $(this).attr("src");
+                                $("#div1").attr("src", caminho);  
+                            });
+                        });
+                        </script>
+                        <style type="text/css">
+                            #div1{
+                                width: 300px;
+                                height: 300px;
+                            }
+                            .b1{                             
+                                float: left;
+                                height: 60px;
+                                width: 80px;
+
+                            }
+                        </style>
+            </head>
+            <body>
+                <h1>Altera a cor da div</h1>
+                <p id="div1"></p><br>
+                <img class="b1" src="js/image2.jpg" alt=""/>
+                <img class="b1" src="js/image3.jpg" alt=""/>
+                <img class="b1" src="js/Image4.jpg" alt=""/>
+                <img class="b1" src="js/Image5.jpg" alt=""/>
+            </body>
+        </html>
