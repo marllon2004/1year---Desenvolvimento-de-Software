@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Peso</title>
+    <script>
+    function peso(){
+        var peso = parseFloat(document.f1.peso.value);
+        var magro = peso-(peso*0.20)
+        var gordo = peso +(peso*0.15)         
+          document.getElementById("Result").innerHTML="Se você engordar 15% terá "+gordo+" se voce emagrecer 20% terá "+magro
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Calcula o peso</br>
+        Digite seu Peso:<input name="peso" type="number" required /> </br>
+         <p id="Result"></p>
+    </form>
+    <button onclick="peso()"> Clique agora e veja seu peso</button>
+</body>
+
+</html>

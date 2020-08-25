@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Área do retângulo</title>
+    <script>
+        function area(){
+            var v1 = parseFloat(document.f1.v1.value);
+            var v2 = parseFloat(document.f1.v2.value);
+            var area = v1 * v2;
+            document.write(area);
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="area()" name="f1">
+        Área do retângulo
+        Comprimento: <input name="v1" type="number" required/>
+        Largura: <input name="v2" type="number" required/>
+        <input type="submit" value="Calcular">    
+    </form>
+</body>
+</html>

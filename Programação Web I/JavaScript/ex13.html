@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio 13</title>
+    <script>
+    function cem(){
+        var n= parseFloat(document.f1.n.value);     
+        if(n <=10 && n >= 1){
+        for(i = 0;i <= 10; i++){
+            var tabuada = n * i 
+            document.write(n + "x" + i + "=" + tabuada +" <br>");}}
+        }
+    </script>
+</head>
+<body onload="cem()">
+        <form action="" name="f1">
+            N: <input name="n" type="number" required/> </br>
+        </form>
+        <button onclick="cem()">Exibir</button>
+</body>
+
+</html>

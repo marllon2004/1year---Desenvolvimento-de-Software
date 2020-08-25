@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Converte valores de reais para dólares</title>
+    <script>
+        function conversao(){
+            var cotacao = parseFloat(document.f1.cotacao.value);
+            var reais = parseFloat(document.f1.reais.value);
+            var dol = reais/cotacao
+            document.getElementById("result").innerHTML ="O valor inserido em reais equivalem a " + dol + " dólares.";
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+            Converte valores de reais para dólares </br>
+            Cotação do Dólar: <input name="cotacao" type="number" required/> </br>
+            Valor em Reais: <input name="reais" type="number" required/> </br>
+            <p id="result"></p> </br>
+    </form>
+    <button onclick="conversao()">Converter</button>
+</body>
+</html>

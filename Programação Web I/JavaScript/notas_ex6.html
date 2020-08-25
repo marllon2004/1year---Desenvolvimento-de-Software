@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 6</title>
+    <script>
+        function media(){
+            var v1 = parseFloat(document.f1.v1.value);
+            var v2 = parseFloat(document.f1.v2.value);
+            var v3 = parseFloat(document.f1.v3.value);
+            var v4 = parseFloat(document.f1.v4.value);
+            var media = (v1+v2+v3+v4)/4;
+            if (media >= 7){
+                document.getElementById("Result").innerHTML="APROVADO";
+            }
+            else{
+                if(media < 5){
+                     document.getElementById("Result").innerHTML="REPROVADO";
+                }
+                else{
+                    document.getElementById("Result").innerHTML="EXAME";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action=""name="f1">
+        Primenira nota: <input type="number" name="v1" required/>
+        Segunda nota: <input type="number" name="v2" required/>
+        Terceira nota: <input type="number" name="v3" required/>
+        Quarta nota: <input type="number" name="v4" required/> 
+        <p id="Result"></p>
+    </form>
+    <button onclick="media()">Calcular Média</button>
+</body>
+</html>

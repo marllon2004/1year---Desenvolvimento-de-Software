@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mostra qual é o sinal do resultado da soma de dois números</title>
+    <script>
+        function verificacao(){
+            var n1 = parseFloat(document.f1.n1.value);
+            var n2 = parseFloat(document.f1.n2.value);
+            var soma = n1 + n2;
+            if (soma > 0){
+                document.getElementById("result").innerHTML="O Resultado é positivo";
+            }
+            else if (soma < 0){
+                document.getElementById("result").innerHTML="O Resultado é negativo";
+            }
+            else{
+                document.getElementById("result").innerHTML="O Resultado é nulo";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+            Mostra qual é o sinal do resultado da soma de dois números </br>
+            Valor 1: <input name="n1" type="number" required/> </br>
+            Valor 2: <input name="n2" type="number" required/> </br>
+            <p id="result"></p> </br>
+    </form>
+    <button onclick="verificacao()">Verifique qual é o sinal</button>
+</body>
+</html>

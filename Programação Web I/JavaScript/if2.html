@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Exemplo usando IF</title>
+        <script>
+            function soma(){
+            var n1 = parseFloat(document.f1.n1.value);
+            var n2 = parseFloat(document.f1.n2.value);
+         media = (n1 + n2) /2;
+            document.getElementById("media").innerHTML = "Resultado" + media;
+            document.getElementById("reprovado").style.color = "red";
+            document.getElementById("aprovado").style.color = "blue";
+        if (media >= 7) {
+            document.getElementById("aprovado").innerHTML = "Aprovado";
+        }
+        else {
+            document.getElementById("reprovado").innerHTML = "Reprovado";
+        }
+            }
+        </script>
+    </head>
+    <body>
+            <form name="f1" action="">
+                    Nota 1: <input type="text" name="n1"/> <br>
+                    Nota 2: <input type="text" name="n2"/> <br>
+                    <p id="media"></p> 
+                    <p id="aprovado"></p> 
+                    <p id="reprovado"></p> 
+            </form>
+            <button onclick="soma()">Media</button>
+
+    </body>
+</html>

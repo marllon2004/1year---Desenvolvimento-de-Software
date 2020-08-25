@@ -1,0 +1,16 @@
+git log: Mostra os comandos commit's feitos
+git status: mostra os arquivos novos e suas alterações
+git shortlog:exibe o log de forma resumida
+git shortlog -sn: quantidade de logs's
+git show:
+git commit -m "Aula do dia 12/08/2019":
+git diff: Exibe alterações no arquivo antes do commit
+git commit -am "Teste diff": adiciona e mostra a mensagem
+git checkout: volta o programa antes de você fazer alteração no commit
+git reset HEAD <nome do arquivo>
+git reset --soft: volta para stage(remove commit) 
+git reset --mixed:volta para modifield(remove commit e add)
+git reset --hard: ignora os commit's anteriores
+git push: add arquivos ao GitHub
+git tag -a: anotação da Tag
+git tag -m: descrição da Tag
