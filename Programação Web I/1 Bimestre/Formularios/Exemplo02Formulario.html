@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html>
+     <head>  
+        <style>
+        </style>
+         <title>Exemplo Formulario</title>
+         <meta charset="UTF-8">
+     </head>
+     <body>
+         <form action="">
+             Nome: <input type="text" name="nome" size="50" required/><br>   
+             Usuario: <input type="text" name="usuario" placeholder="Digite seu usuario"/><br>  
+             Senha: <input type="password" name="senha"/><br> 
+             <br>Idade: <input type="number" name="idade" min="1"/><br>   
+             E-mail: <input type="email" name="email"/><br>  
+             Numero: <input type="number" name="numero" step="any"/><br>  
+             Cor Preferida: <input type="color" name="cor"/><br>  
+             Data nascimento: <input type="date" name="nascimento"/><br>  
+             Sexo:
+             <label for="masc">  
+                 <intup id="masc" type="radio" name="sexo" value="m"/><br>  
+             </label>
+             <label for="fem">  
+                 <intup id="fem" type="radio" name="sexo" value="f"/><br>  
+             </label>
+             <br>
+             Interesses:
+             <intup type="checkbox" name="int" value="mat"/>Matematica  
+             <intup type="checkbox" name="int" value="por"/>Portugues  
+             <intup type="checkbox" name="int" value="por"/>Ingles  
+             <intup type="checkbox" name="int" value="por"/>TPI  
+             <intup type="checkbox" name="int" value="por"/>Logica
+             <br>
+             Data de Pagamento:
+             <select name="pagamento">  
+                  <option value="">Selecione</option>
+                  <option value="5">Dia 5</option>
+                  <option value="10">Dia 10</option>
+                  <option value="15">Dia 15</option>
+                  <option value="20">Dia 20</option>
+             </select>
+             <br>
+             Observacoes:<br> <textarea rows="10" cols="50" style="resize:none">Conteudo</textarea>
+             <br><br><br>
+             <input type="submit" value="Enviar"/>
+         </form>
+     </body>
+ <html>

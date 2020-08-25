@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+        <title>LISTA ORDENADA / NÃO ORDENADA</title>    
+        <style type="text/css">
+            ul{ 
+
+                color: red;
+            
+            }
+            ol{
+                color:blue;
+            }
+            li.quadrado{
+                list-style-image: url("quadrado.png")
+            }
+            li.circulo{
+                list-style-image: url("circulo.png")
+            }
+        </style> 
+     </head>
+     <body>
+         <h1>Listas ordenadas / não ordenadas</h1>
+         <ul>
+             <li>Frutas</li>
+             <ol>
+                 <li>Maça</li>
+                 <li>Banana</li>
+                 <li>Manga</li>
+             </ol>
+             <li>Bebidas</li>
+             <ol type="I">
+                 <li>Vinhos</li>
+                 <ul type="square"
+                     <li>Branco</li>
+                     <li>Tinto</li>
+                 </ul>
+                 <li>Refrigerante</li>
+                 <ul type="disc">
+                     <li>Coca-Cola</li>
+                     <li>Fanta</li>
+                 </ul>
+             </ol>
+             <li>Imagens</li>
+             <ul>
+                  <li class="quadrado">Quadrado</li>
+                  <li class="circulo">Circulo</li>
+             </ul>
+         </ul>             
+     </body>
+ </html>
